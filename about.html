@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare - About Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-icon">🏥</span>
+        <span>MediCare</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="speciality.html">Services</a></li>
+        <li><a href="clinics.html">Clinics</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-login">LOGIN</a>
+        <a href="register.html" class="btn-register">REGISTER</a>
+        <div class="settings-wrap">
+          <button type="button" class="icon-btn" id="settingsToggle" aria-label="Settings"><i class="fas fa-cog"></i></button>
+          <div class="settings-dropdown" id="settingsDropdown">
+            <div class="settings-section">
+              <span class="settings-label">Theme</span>
+              <div class="theme-options">
+                <button type="button" class="theme-btn" data-theme="light">Light</button>
+                <button type="button" class="theme-btn" data-theme="dark">Dark</button>
+              </div>
+            </div>
+            <div class="settings-section">
+              <span class="settings-label">Language</span>
+              <select id="languageSelect" class="settings-select">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="icon-btn"><i class="fas fa-bell"></i></button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Hero Section -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1>About MediCare</h1>
+      <p>Dedicated to providing exceptional healthcare services for over two decades</p>
+    </div>
+  </section>
+
+  <!-- About Main Content -->
+  <section class="about-main">
+    <div class="about-main-container">
+      <div class="about-main-content">
+        <h2>Our Mission</h2>
+        <p>At MediCare, our mission is to provide accessible, high-quality healthcare services that improve the lives of our patients and communities. We are committed to delivering compassionate care with the highest standards of medical excellence.</p>
+        <p>Since our founding in 2000, we have grown from a single clinic to a network of over 1,200 medical facilities, serving millions of patients across the region. Our success is built on trust, innovation, and an unwavering commitment to patient care.</p>
+      </div>
+      <div class="about-main-image">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop" alt="Modern hospital">
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="values-section">
+    <div class="values-container">
+      <h2>Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <i class="fas fa-heart"></i>
+          <h3>Compassion</h3>
+          <p>We treat every patient with empathy, respect, and understanding, recognizing that healthcare is deeply personal.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-award"></i>
+          <h3>Excellence</h3>
+          <p>We maintain the highest standards of medical practice, continuously improving our services and outcomes.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-users"></i>
+          <h3>Integrity</h3>
+          <p>We conduct our practice with honesty, transparency, and ethical principles in everything we do.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Innovation</h3>
+          <p>We embrace new technologies and medical advances to provide the best possible care for our patients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="team-container">
+      <h2>Our Leadership Team</h2>
+      <p class="team-subtitle">Meet the experienced professionals leading MediCare</p>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="data:image/jpeg;base64,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" alt="Dr. Neha Mehta">
+          <h3>Dr. Neha Mehta</h3>
+          <p class="team-role">Chief Medical Officer</p>
+          <p class="team-bio">20+ years of experience in healthcare administration and patient care.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&h=300&fit=crop" alt="Dr. Mukesh Agarwal">
+          <h3>Dr. Mukesh Agarwal</h3>
+          <p class="team-role">Director of Operations</p>
+          <p class="team-bio">Expert in healthcare operations and quality improvement initiatives.</p>
+        </div>
+        <div class="team-member">
+          <img src="data:image/jpeg;base64,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" alt="Dr. Kaushik Chand">
+          <h3>Dr.Kaushik Chand</h3>
+          <p class="team-role">Head of Patient Services</p>
+          <p class="team-bio">Dedicated to enhancing patient experience and satisfaction.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=300&fit=crop" alt="Dr. Aditya Verma">
+          <h3>Dr. Aditya Verma  </h3>
+          <p class="team-role">Chief Technology Officer</p>
+          <p class="team-bio">Leading digital transformation in healthcare delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="achievements-section">
+    <div class="achievements-container">
+      <h2>Our Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement-item">
+          <div class="achievement-number">25+</div>
+          <div class="achievement-label">Years of Excellence</div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-number">5M+</div>
+          <div class="achievement-label">Patients Served</div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-number">50+</div>
+          <div class="achievement-label">Awards & Recognition</div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-number">98%</div>
+          <div class="achievement-label">Patient Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-container">
+      <div class="cta-content">
+        <h2>Join Us in Our Mission</h2>
+        <p>Experience the difference that compassionate, expert care can make in your health journey.</p>
+      </div>
+      <button class="btn-appointment" id="appointmentBtn">BOOK APPOINTMENT TODAY</button>
+    </div>
+  </section>
+
+  <!-- Enhanced Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-icon">🏥</span>
+            <span>MediCare</span>
+          </div>
+          <p>Your trusted healthcare partner providing world-class medical services with compassion and excellence.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="speciality.html">Our Services</a></li>
+            <li><a href="clinics.html">Find a Clinic</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Emergency Care</a></li>
+            <li><a href="#">Primary Care</a></li>
+            <li><a href="#">Specialist Consultation</a></li>
+            <li><a href="#">Diagnostic Services</a></li>
+            <li><a href="#">Preventive Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Health Blog</a></li>
+            <li><a href="#">Patient Portal</a></li>
+            <li><a href="#">Insurance Information</a></li>
+            <li><a href="#">Medical Records</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-phone"></i> +91 886xxxxx42</li>
+            <li><i class="fas fa-envelope"></i> info@medicare.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> S-121 Punjabi Bagh Delhi-110026</li>
+            <li><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 8:00 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for health tips and updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2025 MediCare. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Popup Appointment Form -->
+  <div class="popup" id="appointmentPopup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Book an Appointment</h2>
+      <div class="appointment-meta">
+        <span class="appointment-serial" id="appointmentSerial"></span>
+      </div>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <select required>
+          <option value="">Select Department</option>
+          <option value="cardiology">Cardiology</option>
+          <option value="pediatrics">Pediatrics</option>
+          <option value="dentistry">Dentistry</option>
+          <option value="orthopedics">Orthopedics</option>
+          <option value="neurology">Neurology</option>
+        </select>
+        <input type="date" required />
+        <input type="time" required />
+        <textarea placeholder="Message (Optional)" rows="3"></textarea>
+        <button type="submit">Submit Appointment</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

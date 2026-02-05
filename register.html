@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - MediCare</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html" style="color:inherit;text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+          <span class="logo-icon">🏥</span>
+          <span>MediCare</span>
+        </a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="speciality.html">Services</a></li>
+        <li><a href="clinics.html">Clinics</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-login">LOGIN</a>
+        <a href="register.html" class="btn-register active">REGISTER</a>
+        <div class="settings-wrap">
+          <button type="button" class="icon-btn" id="settingsToggle" aria-label="Settings"><i class="fas fa-cog"></i></button>
+          <div class="settings-dropdown" id="settingsDropdown">
+            <div class="settings-section">
+              <span class="settings-label">Theme</span>
+              <div class="theme-options">
+                <button type="button" class="theme-btn" data-theme="light">Light</button>
+                <button type="button" class="theme-btn" data-theme="dark">Dark</button>
+              </div>
+            </div>
+            <div class="settings-section">
+              <span class="settings-label">Language</span>
+              <select id="languageSelect" class="settings-select">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="icon-btn"><i class="fas fa-bell"></i></button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page hero -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1>Create an Account</h1>
+      <p>Register with MediCare to book appointments and access healthcare services</p>
+    </div>
+  </section>
+
+  <!-- Register form section -->
+  <section class="auth-section">
+    <div class="auth-container">
+      <div class="auth-card">
+        <form id="registerForm" class="auth-form" novalidate>
+          <div class="form-group">
+            <label for="registerName">Full name</label>
+            <input type="text" id="registerName" name="name" placeholder="Your name" autocomplete="name" required minlength="2">
+            <span class="field-error" id="registerNameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="registerEmail">Email address</label>
+            <input type="email" id="registerEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <span class="field-error" id="registerEmailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="registerPassword">Password</label>
+            <div class="input-with-toggle">
+              <input type="password" id="registerPassword" name="password" placeholder="Min 8 characters" autocomplete="new-password" required minlength="8">
+              <button type="button" class="toggle-password" id="toggleRegisterPassword" aria-label="Show password">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye-slash" style="display:none;"></i>
+              </button>
+            </div>
+            <span class="field-error" id="registerPasswordError"></span>
+          </div>
+          <div class="form-group">
+            <label for="registerConfirmPassword">Confirm password</label>
+            <div class="input-with-toggle">
+              <input type="password" id="registerConfirmPassword" name="confirmPassword" placeholder="Confirm your password" autocomplete="new-password" required>
+              <button type="button" class="toggle-password" id="toggleRegisterConfirmPassword" aria-label="Show password">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye-slash" style="display:none;"></i>
+              </button>
+            </div>
+            <span class="field-error" id="registerConfirmPasswordError"></span>
+          </div>
+          <div class="form-group captcha-group">
+            <label>Security check (Captcha)</label>
+            <div class="captcha-row">
+              <span class="captcha-display" id="registerCaptchaDisplay">7 + 2 = ?</span>
+              <button type="button" class="btn-refresh-captcha" id="refreshRegisterCaptcha" aria-label="Refresh captcha"><i class="fas fa-sync-alt"></i></button>
+            </div>
+            <input type="text" id="registerCaptcha" name="captcha" placeholder="Enter answer" autocomplete="off" maxlength="4">
+            <span class="field-error" id="registerCaptchaError"></span>
+          </div>
+          <div class="form-message" id="registerFormMessage"></div>
+          <button type="submit" class="btn-auth-submit">Register</button>
+        </form>
+        <p class="auth-switch">Already have an account? <a href="login.html">Login here</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-icon">🏥</span>
+            <span>MediCare</span>
+          </div>
+          <p>Your trusted healthcare partner.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2025 MediCare. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="settings.js"></script>
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

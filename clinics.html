@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare - Our Clinics</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-icon">🏥</span>
+        <span>MediCare</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="speciality.html">Services</a></li>
+        <li><a href="clinics.html" class="active">Clinics</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-login">LOGIN</a>
+        <a href="register.html" class="btn-register">REGISTER</a>
+        <div class="settings-wrap">
+          <button type="button" class="icon-btn" id="settingsToggle" aria-label="Settings"><i class="fas fa-cog"></i></button>
+          <div class="settings-dropdown" id="settingsDropdown">
+            <div class="settings-section">
+              <span class="settings-label">Theme</span>
+              <div class="theme-options">
+                <button type="button" class="theme-btn" data-theme="light">Light</button>
+                <button type="button" class="theme-btn" data-theme="dark">Dark</button>
+              </div>
+            </div>
+            <div class="settings-section">
+              <span class="settings-label">Language</span>
+              <select id="languageSelect" class="settings-select">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="icon-btn"><i class="fas fa-bell"></i></button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Our Clinics Section -->
+  <section class="clinics-page">
+    <div class="clinics-page-header">
+      <h2>Our Clinics</h2>
+      <p>Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed.</p>
+    </div>
+    <div class="clinics-grid-page">
+      <div class="clinic-card-page">
+        <img src="https://images.indianexpress.com/2025/03/apollo-hospitals-sc.jpg?w=640" alt="Clinic" class="clinic-image">
+        <h3>Apollo Hospitals</h3>
+        <div class="clinic-contact">
+          <p><span>📞</span> +91 8069049768</p>
+          <p><span>✉️</span> apollohospitals@gmail.com</p>
+          <p><span>📍</span> NH-19, Jasola Vihar, New Delhi, Delhi 110020</p>
+        </div>
+        <button class="btn-contact">CONTACT</button>
+      </div>
+      <div class="clinic-card-page">
+        <img src="https://www.medijourney.co.in/uploads/51ba570fe68fc088e0a942bdf8700cdce7eb8b1d/17137802492022-10-25-1.webp" alt="Clinic" class="clinic-image">
+        <h3>Max Super Speciality Hospital</h3>
+        <div class="clinic-contact">
+          <p><span>📞</span> 0135 350 0800</p>
+          <p><span>✉️</span> Maxhospitals@luxi.com</p>
+          <p><span>📍</span> Mussoorie diversion Road, Johri, Malsi, Dehradun, Uttarakhand 248009</p>
+        </div>
+        <button class="btn-contact">CONTACT</button>
+      </div>
+      <div class="clinic-card-page">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Medanta_the_medicity_hospital.jpg/250px-Medanta_the_medicity_hospital.jpg" alt="Clinic" class="clinic-image">
+        <h3>Medanta – The Medicity in Gurgaon</h3>
+        <div class="clinic-contact">
+          <p><span>📞</span> 0124 414 1414</p>
+          <p><span>✉️</span> info@medanta.org</p>
+          <p><span>📍</span> CH Baktawar Singh Road, Sector 38, Gurugram, Haryana 122001</p>
+        </div>
+        <button class="btn-contact">CONTACT</button>
+      </div>
+      <div class="clinic-card-page">
+        <img src="https://sgrh.com/assets/img/uploads/17287241238.jpg" alt="Clinic" class="clinic-image">
+        <h3>Sir Ganga Ram Hospital</h3>
+        <div class="clinic-contact">
+          <p><span>📞</span> +91 11-4225 4000</p>
+          <p><span>✉️</span> gangaram@sgrh.com</p>
+          <p><span>📍</span> Sir Ganga Ram Hospital Marg, Old Rajinder Nagar, Rajinder Nagar, New Delhi – 110060, India</p>
+        </div>
+        <button class="btn-contact">CONTACT</button>
+      </div>
+      <div class="clinic-card-page">
+        <img src="https://safartibbi.com/wp-content/uploads/2022/12/sorvodya-hospital.jpg" alt="Clinic" class="clinic-image">
+        <h3>Sarvodaya Hospital</h3>
+        <div class="clinic-contact">
+          <p><span>📞</span> +91 1800 313 1414</p>
+          <p><span>✉️</span> info@sarvodayahospital.com</p>
+          <p><span>📍</span> Sector 19 Branch: Sarvodaya Hospital, Gopi Colony, Old Faridabad, Haryana – 121002</p>
+        </div>
+        <button class="btn-contact">CONTACT</button>
+      </div>
+      <div class="clinic-card-page">
+        <img src="https://wmedtour.com/wp-content/uploads/2024/12/1670847730094_HospitalProfileImage_ae3f3ad3-ad94-47ef-8b9d-a784640729a7-992x1024.png" alt="Clinic" class="clinic-image">
+        <h3>BLK Max Hospital</h3>
+        <div class="clinic-contact">
+          <p><span>📞</span> 11-44020000 / 011-35034000</p>
+          <p><span>✉️</span> administration@BLK.org</p>
+          <p><span>📍</span> Okhla Road, New Friends Colony, New Delhi – 110025, India</p>
+        </div>
+        <button class="btn-contact">CONTACT</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-icon">🏥</span>
+            <span>MediCare</span>
+          </div>
+          <p>Your trusted healthcare partner providing world-class medical services with compassion and excellence.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="speciality.html">Our Services</a></li>
+            <li><a href="clinics.html">Find a Clinic</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Emergency Care</a></li>
+            <li><a href="#">Primary Care</a></li>
+            <li><a href="#">Specialist Consultation</a></li>
+            <li><a href="#">Diagnostic Services</a></li>
+            <li><a href="#">Preventive Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Health Blog</a></li>
+            <li><a href="#">Patient Portal</a></li>
+            <li><a href="#">Insurance Information</a></li>
+            <li><a href="#">Medical Records</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-phone"></i> +91 886xxxxx42</li>
+            <li><i class="fas fa-envelope"></i> info@medicare.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> S-121 Punjabi Bagh Delhi-110026</li>
+            <li><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 8:00 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for health tips and updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2025 MediCare. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Popup Appointment Form -->
+  <div class="popup" id="appointmentPopup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Book an Appointment</h2>
+      <div class="appointment-meta">
+        <span class="appointment-serial" id="appointmentSerial"></span>
+      </div>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <select required>
+          <option value="">Select Department</option>
+          <option value="cardiology">Cardiology</option>
+          <option value="pediatrics">Pediatrics</option>
+          <option value="dentistry">Dentistry</option>
+          <option value="orthopedics">Orthopedics</option>
+          <option value="traumatology">Traumatology</option>
+          <option value="anesthesiology">Anesthesiology</option>
+          <option value="rheumatology">Rheumatology</option>
+          <option value="andrology">Andrology</option>
+          <option value="orthodontics">Orthodontics</option>
+        </select>
+        <input type="date" required />
+        <input type="time" required />
+        <textarea placeholder="Message (Optional)" rows="3"></textarea>
+        <button type="submit">Submit Appointment</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

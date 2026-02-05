@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare - Your Trusted Healthcare Partner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-icon">🏥</span>
+        <span>MediCare</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="speciality.html">Services</a></li>
+        <li><a href="clinics.html">Clinics</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-login">LOGIN</a>
+        <a href="register.html" class="btn-register">REGISTER</a>
+        <div class="settings-wrap">
+          <button type="button" class="icon-btn" id="settingsToggle" aria-label="Settings"><i class="fas fa-cog"></i></button>
+          <div class="settings-dropdown" id="settingsDropdown">
+            <div class="settings-section">
+              <span class="settings-label">Theme</span>
+              <div class="theme-options">
+                <button type="button" class="theme-btn" data-theme="light">Light</button>
+                <button type="button" class="theme-btn" data-theme="dark">Dark</button>
+              </div>
+            </div>
+            <div class="settings-section">
+              <span class="settings-label">Language</span>
+              <select id="languageSelect" class="settings-select">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="icon-btn"><i class="fas fa-bell"></i></button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Your Health, Our Priority</h1>
+        <p>Experience world-class healthcare services with our team of expert doctors and state-of-the-art medical facilities. Your wellness journey starts here.</p>
+        <div class="hero-buttons">
+          <button class="btn-more-info">LEARN MORE</button>
+          <button class="btn-register-now btn-appointment">BOOK APPOINTMENT</button>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop" alt="Medical professionals" class="hero-image">
+      </div>
+    </div>
+    <div class="hero-decoration"></div>
+  </section>
+
+  <!-- Feature Highlights -->
+  <section class="features">
+    <div class="features-container">
+      <div class="feature-block">
+        <div class="feature-icon"><i class="fas fa-briefcase-medical"></i></div>
+        <h3 class="feature-title">Business Solution</h3>
+        <p>Comprehensive healthcare solutions for businesses of all sizes. Keep your employees healthy and productive with our corporate health programs.</p>
+      </div>
+      <div class="feature-block">
+        <div class="feature-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+        <h3 class="feature-title">Free Consultation</h3>
+        <p>Get a free initial consultation with our specialists. No hidden fees, transparent pricing, and flexible payment options available.</p>
+      </div>
+      <div class="feature-block">
+        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+        <h3 class="feature-title">24/7 Emergency Care</h3>
+        <p>Round-the-clock emergency medical services. Our dedicated team is always ready to provide immediate care when you need it most.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fas fa-user-md"></i></div>
+        <h3 class="stat-number">+1200</h3>
+        <h4 class="stat-label">Expert Doctors</h4>
+        <p>Board-certified physicians with years of experience across various medical specialties.</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fas fa-hospital"></i></div>
+        <h3 class="stat-number">+1200</h3>
+        <h4 class="stat-label">Medical Clinics</h4>
+        <p>Modern facilities equipped with the latest medical technology and equipment.</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon"><i class="fas fa-stethoscope"></i></div>
+        <h3 class="stat-number">+100</h3>
+        <h4 class="stat-label">Specialists</h4>
+        <p>Specialized medical professionals covering all major healthcare disciplines.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-preview">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop" alt="Modern hospital facility">
+      </div>
+      <div class="about-content">
+        <h2>Why Choose MediCare?</h2>
+        <p>MediCare has been serving communities for over two decades, providing exceptional healthcare services with compassion and excellence.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Advanced Medical Technology</span>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Experienced Medical Professionals</span>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Patient-Centered Care</span>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Affordable Healthcare Solutions</span>
+          </div>
+        </div>
+        <a href="about.html" class="btn-learn-more">Learn More About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview Section -->
+  <section class="services-preview">
+    <div class="services-preview-header">
+      <h2>Our Medical Services</h2>
+      <p>Comprehensive healthcare services tailored to meet all your medical needs</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400&h=300&fit=crop" alt="Cardiology">
+        <div class="service-content">
+          <h3><i class="fas fa-heartbeat"></i> Cardiology</h3>
+          <p>Expert heart care and cardiovascular treatments from leading cardiologists.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=400&h=300&fit=crop" alt="Pediatrics">
+        <div class="service-content">
+          <h3><i class="fas fa-baby"></i> Pediatrics</h3>
+          <p>Specialized care for children from infancy through adolescence.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&h=300&fit=crop" alt="Dentistry">
+        <div class="service-content">
+          <h3><i class="fas fa-tooth"></i> Dentistry</h3>
+          <p>Complete dental care including preventive, cosmetic, and restorative treatments.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="data:image/jpeg;base64,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" alt="Orthopedics">
+        <div class="service-content">
+          <h3><i class="fas fa-bone"></i> Orthopedics</h3>
+          <p>Expert treatment for bone, joint, and muscle conditions.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=300&fit=crop" alt="Neurology">
+        <div class="service-content">
+          <h3><i class="fas fa-brain"></i> Neurology</h3>
+          <p>Advanced neurological care for brain and nervous system disorders.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=300&fit=crop" alt="Dermatology">
+        <div class="service-content">
+          <h3><i class="fas fa-spa"></i> Dermatology</h3>
+          <p>Comprehensive skin care and treatment for all dermatological conditions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="services-cta">
+      <a href="speciality.html" class="btn-view-all">View All Services →</a>
+    </div>
+  </section>
+
+  <!-- Clinic Facilities Section -->
+  <section class="facilities">
+    <div class="facilities-header">
+      <div>
+        <h2>Clinic Facilities</h2>
+        <p>State-of-the-art medical facilities equipped with cutting-edge technology for optimal patient care.</p>
+      </div>
+      <a href="clinics.html" class="see-all-link">SEE ALL →</a>
+    </div>
+    <div class="facilities-container">
+      <div class="facilities-carousel">
+        <div class="facility-main-illustration">
+          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500&h=400&fit=crop" alt="Medical facility">
+        </div>
+        <div class="facility-cards">
+          <div class="facility-card">
+            <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=300&h=200&fit=crop" alt="Emergency Room">
+            <h3>Emergency Department</h3>
+            <p>24/7 emergency care with rapid response teams and advanced life support systems.</p>
+            <button class="btn-see-detail">SEE DETAIL</button>
+          </div>
+          <div class="facility-card">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=200&fit=crop" alt="Operating Room">
+            <h3>Operating Theaters</h3>
+            <p>Modern surgical suites with advanced monitoring and minimally invasive technology.</p>
+            <button class="btn-see-detail">SEE DETAIL</button>
+          </div>
+          <div class="facility-card">
+            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=300&h=200&fit=crop" alt="Laboratory">
+            <h3>Diagnostic Lab</h3>
+            <p>Fully equipped laboratory with advanced diagnostic capabilities and quick results.</p>
+            <button class="btn-see-detail">SEE DETAIL</button>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog/News Section -->
+  <section class="blog-section">
+    <div class="blog-header">
+      <h2>Health News & Updates</h2>
+      <p>Stay informed with the latest health tips, medical news, and wellness advice</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=250&fit=crop" alt="Health article">
+        <div class="blog-content">
+          <span class="blog-date"><i class="far fa-calendar"></i> March 15, 2025</span>
+          <h3>10 Tips for Maintaining Heart Health</h3>
+          <p>Discover simple lifestyle changes that can significantly improve your cardiovascular health and reduce the risk of heart disease.</p>
+          <a href="#" class="blog-link">Read More →</a>
+        </div>
+      </article>
+      
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&h=250&fit=crop" alt="Health article">
+        <div class="blog-content">
+          <span class="blog-date"><i class="far fa-calendar"></i> March 12, 2025</span>
+          <h3>Understanding Seasonal Allergies</h3>
+          <p>Learn how to identify, prevent, and manage seasonal allergies effectively with expert medical advice.</p>
+          <a href="#" class="blog-link">Read More →</a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=250&fit=crop" alt="Health article">
+        <div class="blog-content">
+          <span class="blog-date"><i class="far fa-calendar"></i> March 10, 2025</span>
+          <h3>The Importance of Regular Health Checkups</h3>
+          <p>Regular health screenings can detect potential issues early and help maintain optimal health throughout your life.</p>
+          <a href="#" class="blog-link">Read More →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Ready to Get Started CTA -->
+  <section class="cta-section">
+    <div class="cta-container">
+      <div class="cta-content">
+        <h2>Ready to get started?</h2>
+        <p>Book your appointment today and take the first step towards better health. Our team is here to help you on your wellness journey.</p>
+      </div>
+      <button class="btn-appointment" id="appointmentBtn">CREATE APPOINTMENT NOW!</button>
+    </div>
+  </section>
+
+  <!-- Enhanced Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-icon">🏥</span>
+            <span>MediCare</span>
+          </div>
+          <p>Your trusted healthcare partner providing world-class medical services with compassion and excellence.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="speciality.html">Our Services</a></li>
+            <li><a href="clinics.html">Find a Clinic</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Emergency Care</a></li>
+            <li><a href="#">Primary Care</a></li>
+            <li><a href="#">Specialist Consultation</a></li>
+            <li><a href="#">Diagnostic Services</a></li>
+            <li><a href="#">Preventive Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Health Blog</a></li>
+            <li><a href="#">Patient Portal</a></li>
+            <li><a href="#">Insurance Information</a></li>
+            <li><a href="#">Medical Records</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-phone"></i> +91 886xxxxx42</li>
+            <li><i class="fas fa-envelope"></i> info@medicare.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> S-121 Punjabi Bagh Delhi-110026</li>
+            <li><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 8:00 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for health tips and updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2025 MediCare. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Popup Appointment Form -->
+  <div class="popup" id="appointmentPopup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Book an Appointment</h2>
+      <div class="appointment-meta">
+        <span class="appointment-serial" id="appointmentSerial"></span>
+      </div>
+      <form>
+        <label>
+          <span class="visually-hidden">Full Name</span>
+          <input type="text" id="appointmentFullName" name="fullName" placeholder="Full Name" required />
+        </label>
+
+        <label>
+          <span class="visually-hidden">Email</span>
+          <input type="email" id="appointmentEmail" name="email" placeholder="Email" required />
+        </label>
+
+        <label>
+          <span class="visually-hidden">Phone Number</span>
+          <input type="tel" id="appointmentPhone" name="phone" placeholder="Phone Number" required />
+        </label>
+
+        <label>
+          <span class="visually-hidden">Department</span>
+          <select id="appointmentDepartment" name="department" required>
+            <option value="" disabled selected>Select Department</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="dentistry">Dentistry</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="neurology">Neurology</option>
+          </select>
+        </label>
+
+        <label>
+          <span class="visually-hidden">Appointment Date</span>
+          <input type="date" id="appointmentDate" name="date" required />
+        </label>
+
+        <label>
+          <span class="visually-hidden">Appointment Time</span>
+          <input type="time" id="appointmentTime" name="time" required />
+        </label>
+
+        <label>
+          <span class="visually-hidden">Message (Optional)</span>
+          <textarea id="appointmentMessage" name="message" placeholder="Message (Optional)" rows="3"></textarea>
+        </label>
+
+        <button type="submit">Submit Appointment</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
